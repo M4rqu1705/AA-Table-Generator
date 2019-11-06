@@ -1,19 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
+    <head>
+        <meta charset="UTF-8"/>
 
-    <title>LaTeX Table Generator</title>
+        <title>LaTeX Table Generator</title>
 
-    <base href="./"/>
+        <base href="./"/>
 
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css"/>
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="#" /> -->
+        <!-- Flatly Bootstrap CSS -->
+        <!-- <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css"/> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-</head>
-<body>
-    Hello World!
-    
-</body>
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css"/>
+        <!-- <link rel="shortcut icon" type="image/x-icon" href="#" /> -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!-- https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp -->
+
+
+        <!-- Nav bar -->
+        <nav class='navbar navbar-expand-sm bg-dark'>
+            <ul class='navbar-nav'>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Table
+                    </a>
+                    <div class="dropdown-menu">
+                        <button class='dropdown-item btn btn-secondary'>Set Size</button>
+                        <button class='dropdown-item btn btn-secondary'>Clear Table</button>
+                        <button class='dropdown-item btn btn-secondary'>Transpose Table</button>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Column
+                    </a>
+                    <div class="dropdown-menu">
+                        <button class='dropdown-item btn btn-secondary'>Text Align</button>
+                        <button class='dropdown-item btn btn-secondary'>Insert to the left</button>
+                        <button class='dropdown-item btn btn-secondary'>Insert to the right</button>
+                        <button class='dropdown-item btn btn-secondary'>Remove</button>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Row
+                    </a>
+                    <div class="dropdown-menu">
+                        <button class='dropdown-item btn btn-secondary'>Insert above</button>
+                        <button class='dropdown-item btn btn-secondary'>Insert below</button>
+                        <button class='dropdown-item btn btn-secondary'>Remove</button>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Cell
+                    </a>
+                    <div class="dropdown-menu">
+                        <button class='dropdown-item btn btn-secondary'>Merge Cells</button>
+                        <button class='dropdown-item btn btn-secondary'>Split Cells</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <table class='table table-striped'>
+            <thead class='thead-dark'>
+                <tr>
+                    <th><input type='text' placeholder='Hello'></th>
+                    <th><input type='text' placeholder='Hello'></th>
+                    <th><input type='text' placeholder='Hello'></th>
+                    <th><input type='text' placeholder='Hello'></th>
+                    <th><input type='text' placeholder='Hello'></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type='text' placeholder='Hello'></td>
+                    <td><input type='text' placeholder='Hello'></td>
+                    <td><input type='text' placeholder='Hello'></td>
+                    <td><input type='text' placeholder='Hello'></td>
+                    <td><input type='text' placeholder='Hello'></td>
+                </tr>
+                <tr>
+                    <td><input type='text' placeholder='Hello'></td>
+                    <td><input type='text' placeholder='Hello'></td>
+                    <td><input type='text' placeholder='Hello'></td>
+                    <td><input type='text' placeholder='Hello'></td>
+                    <td><input type='text' placeholder='Hello'></td>
+                </tr>
+                <tr>
+                    <td><input type='text' placeholder='Hello'></td>
+                    <td><input type='text' placeholder='Hello'></td>
+                    <td><input type='text' placeholder='Hello'></td>
+                    <td><input type='text' placeholder='Hello'></td>
+                    <td><input type='text' placeholder='Hello'></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </body>
 </html>
