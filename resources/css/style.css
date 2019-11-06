@@ -4,19 +4,35 @@
     padding:0;
 }
 
+@font-face {
+    font-family: "Avant";
+    src: url("../fonts/Avant Regular.ttf");
+}
+
 html{
-    height:100vh;
     width:100vw;
+    height:100vh;
     font-size:20px;
 }
 
 table{
-    margin:auto;
     margin-top:1em;
+    margin-left:1em;
+    font:12px "Avant";
 }
-input{
-    padding:1em;
-    text-align:center;
+th, td{
+    height:100%;
+    width:3cm;
+}
+div[contenteditable=true]{
     background:none;
     border:none;
+    line-height: 1px;
+    margin:auto;
+    overflow:hidden;    
+    padding-top:auto;
+    padding:0.1em;
+    resize:none;
+    text-align:center;
+    width:3cm;
 }
