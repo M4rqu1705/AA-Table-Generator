@@ -13,6 +13,7 @@ html{
     width:100vw;
     height:100vh;
     font-size:20px;
+	overflow:hidden;
 }
 
 table{
@@ -20,19 +21,14 @@ table{
     margin-left:1em;
     font:12px "Avant";
 }
-th, td{
-    height:100%;
-    width:3cm;
-}
+
 div[contenteditable=true]{
+	height:100%;
+    width:3cm;
     background:none;
     border:none;
-    line-height: 1px;
-    margin:auto;
+    line-height: 1.25em;
     overflow:hidden;    
-    padding-top:auto;
-    padding:0.1em;
     resize:none;
     text-align:center;
-    width:3cm;
 }
